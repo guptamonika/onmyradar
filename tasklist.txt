@@ -1,0 +1,26 @@
+Purpose - to learn js, node, react, redux, webpack etc
+side - if it can be a side project with office?
+
+Make sure
+
+dashboard req
+dash/user/abc - list all twitter feed with abc hash
+dash/user add a dashboard - twitter handles, hash etc. description, user 
+list of dashboard
+dashboard details
+edit in place
+add notes or highlight.
+authentication
+BE store for the list of dash per user
+subdash etc
+
+
+todo
+install node, express and react maybe
+Say hello
+1st list of dash
+Dash detail with all the info from a mock array, router etc
+Add some kind of DB
+Add some kind of API for get, post
+Add dash 
+Add data model, redux here , edit dash

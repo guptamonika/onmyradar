@@ -1,0 +1,21 @@
+{
+  "name": "onmyradar",
+  "version": "1.0.0",
+  "description": "On MyRadar ",
+  "main": "index.js",
+  "scripts": {
+    "test": "myradartest"
+  },
+  "author": "monikagupta",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.0.0",
+    "express": "^4.14.0",
+    "guid": "0.0.12",
+    "gulp": "^3.9.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

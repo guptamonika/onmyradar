@@ -1,0 +1,14 @@
+{
+  "name": "onmyradar",
+  "description": On My Radar"",
+  "main": "index.js",
+  "authors": [
+    "monikagupta"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/guptamonika/Practice",
+  "private": true,
+  "dependencies": {
+    "bootstrap-css": "^3.3.6"
+  }
+}
