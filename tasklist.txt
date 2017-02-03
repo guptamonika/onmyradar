@@ -1,4 +1,4 @@
-Purpose - to learn js, node, react, redux, webpack etc
+Purpose - to learn js, node, react, redux, webpack, css, mixin etc
 side - if it can be a side project with office?
 
 Make sure
@@ -16,11 +16,12 @@ subdash etc
 
 
 todo
-install node, express and react maybe
-Say hello
-1st list of dash
+//install node, express and react maybe
+//Say hello
+//1st list of dash
 Dash detail with all the info from a mock array, router etc
+Add data model, redux here , edit dash
 Add some kind of DB
 Add some kind of API for get, post
 Add dash 
-Add data model, redux here , edit dash
+scss etc
