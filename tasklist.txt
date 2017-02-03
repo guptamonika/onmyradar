@@ -25,3 +25,11 @@ Add some kind of DB
 Add some kind of API for get, post
 Add dash 
 scss etc
+
+
+// learnings
+module.exports expects an object
+you want to use private vars and functions. Do this using the module pattern with closures.
+expose only the functions that you want to expose. 
+
+![whatsapp image 2017-02-03 at 1 46 14 pm](https://cloud.githubusercontent.com/assets/8205243/22609824/891ec454-ea17-11e6-8717-bb663e1d9a8d.jpeg)
