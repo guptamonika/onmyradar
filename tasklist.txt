@@ -6,12 +6,16 @@ Make sure
 dashboard req
 dash/user/abc - list all twitter feed with abc hash
 dash/user add a dashboard - twitter handles, hash etc. description, user 
-list of dashboard
-dashboard details
-edit in place
-add notes or highlight.
+//list of dashboard
+browser history
+dashboard details page
+	new page 
+	same page 
+	in a modal
+//edit in place
+/add notes or highlight.
 authentication
-BE store for the list of dash per user
+//BE store for the list of dash per user
 subdash etc
 
 
@@ -28,6 +32,9 @@ scss etc
 
 
 // learnings
+followed this: https://www.codeproject.com/Articles/1067725/Part-Building-web-app-using-react-js-express-js
+https://www.codeproject.com/Articles/1068287/Part-Building-web-app-using-react-js-express-js-no
+
 module.exports expects an object
 you want to use private vars and functions. Do this using the module pattern with closures.
 expose only the functions that you want to expose. 

@@ -1,32 +1,48 @@
 var Dispatcher = require('../dispatcher.js');
+var RadarService = require ('../services/radarService');
 
 var RadarStore = function() {
 	var listeners =[];
-	var radars =  [
-			{id:"fe", name:"Frontend",description:"All Frontend related things"},
-			{id:"js", name:"Javascript",description:"Javascript Sauce"}
-		];
+	var radars =  [];
+
 	function getRadars() {
-		return radars;
 		console.log("getRadars");
+		return radars;
+	}
+	
+	function populateRadarsFromSource() {
+		RadarService.getRadars(function(response){
+			console.log(response);
+			radars = response;
+			triggerChange();
+		});
 	}
 
 	function addRadar(data) {
 		console.log("addRadar");
-		radars.push(data);
-		triggerChange();
+		//radars.push(data);
+		RadarService.addRadar(data,function(response){
+			if (response._id) {
+				radars.push(response);
+				triggerChange();
+			}
+		});
 	}
 
 	function deleteRadar(data) {
 		console.log("deleteRadar");
-		var index;
-		radars.forEach(function(radar, i){
-			if(radar.id === data.id) {
-				index = i;
+		RadarService.deleteRadar(data,function(response){
+			if (response.n === 1) {
+				var index;
+				radars.forEach(function(radar, i){
+					if(radar._id === data._id) {
+						index = i;
+					}
+				});
+				radars.splice(index, 1);
+				triggerChange();
 			}
 		});
-		radars.splice(index, 1);
-		triggerChange();
 	}
 
 	function onChange(listener) {
@@ -52,6 +68,7 @@ var RadarStore = function() {
 	
 	return {
 		getRadars:getRadars,
+		populateRadarsFromSource: populateRadarsFromSource,
 		onChange:onChange
 	}
 };

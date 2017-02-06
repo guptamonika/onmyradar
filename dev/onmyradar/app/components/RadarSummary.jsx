@@ -11,7 +11,7 @@ module.exports = React.createClass({
 	deleteRadar: function(e){
 		e.preventDefault();
 		RadarAction.deleteRadar({
-			id: this.props.radaritem.id
+			_id: this.props.radaritem._id
 		});
 	},
 	
